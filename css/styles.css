@@ -495,3 +495,77 @@ p {
         min-height: 150px;
     }
 }
+
+.tier-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.1rem;
+}
+
+.tier-card {
+    background: linear-gradient(165deg, #151515 0%, #202020 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 1.2rem;
+    box-shadow: var(--shadow);
+}
+
+.tier-card.popular {
+    border-color: rgba(202, 253, 0, 0.45);
+    box-shadow: 0 0 0 1px rgba(202, 253, 0, 0.22), 0 20px 34px rgba(0, 0, 0, 0.55);
+}
+
+.tier-card h3 {
+    margin-bottom: 0.2rem;
+}
+
+.tier-price {
+    font-family: "Space Grotesk", "Manrope", sans-serif;
+    font-size: 2rem;
+    letter-spacing: -0.03em;
+    margin: 0.35rem 0 0.55rem;
+}
+
+.tier-subtitle {
+    margin-top: 0;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.11em;
+    font-size: 0.66rem;
+}
+
+.tier-list {
+    padding-left: 1.1rem;
+    margin: 0 0 1rem;
+}
+
+.tier-list li {
+    margin-bottom: 0.38rem;
+}
+
+.plan-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+}
+
+.plan-table th,
+.plan-table td {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.65rem;
+    text-align: left;
+    vertical-align: top;
+}
+
+.plan-table th {
+    background-color: rgba(202, 253, 0, 0.12);
+    color: var(--primary-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.7rem;
+    font-family: "Space Grotesk", "Manrope", sans-serif;
+}
+
+.plan-table tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.02);
+}
