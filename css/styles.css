@@ -569,3 +569,32 @@ p {
 .plan-table tbody tr:nth-child(even) {
     background-color: rgba(255, 255, 255, 0.02);
 }
+
+.class-grid {
+    display: grid;
+    grid-template-columns: 1.65fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.1rem;
+}
+
+.class-column {
+    display: grid;
+    gap: 1rem;
+}
+
+.class-card {
+    background: linear-gradient(160deg, #151515 0%, #232323 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 1.15rem;
+}
+
+.class-card-accent {
+    background: linear-gradient(150deg, #d4ff31 0%, #beee00 100%);
+    color: #273100;
+}
+
+.class-card-accent h3,
+.class-card-accent p,
+.class-card-accent .muted {
+    color: #273100;
+}
